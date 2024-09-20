@@ -1,33 +1,20 @@
 ---
 title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+description: 'Introduction to Cal.com API endpoints'
 ---
-
-<Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
-</Note>
-
-## Welcome
-
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
-
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
 
 ## Authentication
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+The Cal.com API uses API keys to authenticate requests. You can view and manage your API keys in your settings page under the security tab in Cal.com.
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
-```
+<img src="/images/i1600x899-DllqhV6w_3Vj_oxtjov.png" />
+
+API Keys are under Settings > Security
+
+Test mode secret keys have the prefix `cal_` and live mode secret keys have the prefix `cal_live_`.
+
+Your API keys carry many privileges, so be sure to keep them secure! Do not share your secret API keys in publicly accessible areas such as GitHub, client-side code, and so forth.
+
+Authentication to the API is performed via the Authentication header like: `Bearer: cal_live_xxxxxx`
+
+All API requests must be made over HTTPS. Calls made over plain HTTP will fail. API requests without authentication will also fail.
