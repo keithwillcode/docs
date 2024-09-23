@@ -5,7 +5,7 @@
     "dark": "https://cal.com/logo-white.svg",
     "light": "https://cal.com/logo.svg"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon-32x32.png",
   "colors": {
     "primary": "#111827",
     "light": "#d6d6d6",
@@ -27,21 +27,11 @@
   },
   "tabs": [
     {
-      "name": "API Reference",
+      "name": "API v2",
       "url": "api-reference"
     }
   ],
   "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "/docs/introduction"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://cal.com/blog"
-    },
     {
       "name": "API Reference",
       "openapi": "https://d22wtxizf91gfh.cloudfront.net/docs-json",
@@ -51,14 +41,7 @@
   ],
   "navigation": [
     {
-      "group": "Get Started",
-      "pages": [
-        "introduction",
-        "quickstart"
-      ]
-    },
-    {
-      "group": "API Documentation",
+      "group": "API Reference",
       "pages": [
         "api-reference/introduction"
       ]
