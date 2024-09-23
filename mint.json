@@ -27,23 +27,30 @@
   },
   "tabs": [
     {
-      "name": "API v2",
-      "url": "api-reference"
+      "name": "API Reference V1",
+      "url": "v1/api-reference",
+      "version": "v1"
+    },
+    {
+      "name": "API Reference V2",
+      "url": "v2/api-reference",
+      "version": "v2"
     }
   ],
   "anchors": [
     {
       "name": "API Reference",
       "openapi": "https://d22wtxizf91gfh.cloudfront.net/docs-json",
-      "url": "api-reference",
+      "url": "v2/api-reference",
       "icon": "square-terminal"
     }
   ],
   "navigation": [
     {
       "group": "API Reference",
+      "version": "v2",
       "pages": [
-        "api-reference/introduction"
+        "v2/api-reference/introduction"
       ]
     }
   ],
@@ -51,5 +58,6 @@
     "x": "https://x.com/calcom",
     "github": "https://github.com/calcom",
     "linkedin": "https://www.linkedin.com/company/cal-com"
-  }
+  },
+  "versions": ["v2", "v1"]
 }
