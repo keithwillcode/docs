@@ -41,7 +41,7 @@
   "anchors": [
     {
       "name": "API Reference",
-      "openapi": "https://d22wtxizf91gfh.cloudfront.net/docs-json",
+      "openapi": "https://api-v2.cal.dev/docs-json",
       "url": "v2/api-reference",
       "icon": "square-terminal"
     },
